@@ -1,5 +1,6 @@
 import './NavBar.css'
 import Button from '@mui/material/Button';
+import CartWidget from '../CartWidget/CartWidget'
 
 function NavBar() {
     return(
@@ -13,8 +14,10 @@ function NavBar() {
                     <li><Button>Shoes</Button></li>
                     <li><Button>Clothing</Button></li>
                     <li><Button>New Releases</Button></li>
-                    <li><Button>Size Guide</Button></li>
+                    <li><Button>Size Guide</Button></li>  
+                    <li><CartWidget/></li>
                 </ul>
+            
         </header>
     )
 }
