@@ -1,10 +1,11 @@
+export default function ItemListContainer (props) {
 
-function ItemListContainer() {
+    console.log (props)
     return(
         <div>
-            <h2>Listado de Productos</h2>
+            <h2>{props.title}</h2>
         </div>
     )
 } 
 
-export default ItemListContainer
+
