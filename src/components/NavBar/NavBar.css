@@ -17,10 +17,18 @@ header.main-header {
   
   ul.navbar li {
       margin-right: 15px;
+      padding-top: 15px;
+  }
+
+  header.main-header li button {
+    background: none;
+    transition: all 0.2s ease;
+    color: white;
   }
   
   .logo-container {
     width: 200px;
+    padding-top: 3px;
   }
   
   .logo-container img {

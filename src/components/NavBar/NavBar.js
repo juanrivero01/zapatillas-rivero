@@ -15,7 +15,7 @@ function NavBar() {
                     <li><Button>Clothing</Button></li>
                     <li><Button>New Releases</Button></li>
                     <li><Button>Size Guide</Button></li>  
-                    <li><CartWidget/></li>
+                    <li><Button><CartWidget/></Button></li>
                 </ul>
             
         </header>
