@@ -1,21 +1,27 @@
 import './card.css'
+import React,{useState} from 'react'
 import ItemCount from '../ItemCount/ItemCount';
 
 
 
-export default function Card() {
+export default function Card({data}) {
+  const { title, price, image, stock} = data
+  const [ count, setCount ] = useState(1)
+
+  const onAdd = () => {
+    console.log (count)
+    }
+
 
   return (
     <figure className="shopping-card">
   <div className="image">
-    <img src="jordan.png" alt=""/>
-    <button href="#" className="add-to-cart">Add to Cart</button>
+    <img src= {`./${image}`} alt=""/>
   </div>
   <figcaption>
-    <h2>Denim Shirt</h2>
-    <p>My family is dysfunctional and my parents won't empower me. Consequently I'm not self actualized.</p>
-    <div className="price">$65.00 </div>
-    <ItemCount/>
+    <h2>{title}</h2>
+    <div className="price">${price} </div>
+    <ItemCount stock={stock}/>
   </figcaption>
 </figure>
   );

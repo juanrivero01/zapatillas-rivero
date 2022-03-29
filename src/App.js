@@ -1,6 +1,7 @@
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
-import Card from './components/Card/Card'
+import ListProducts from './components/ListProducts/ListProducts';
+
 
 
 
@@ -9,12 +10,8 @@ function App() {
     <div className="App">
       <NavBar/>
 
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
+
+    <ListProducts/>      
     </div>
   );
 }
